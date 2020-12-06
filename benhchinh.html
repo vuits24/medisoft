@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>newApp</title>
+</head>
+<body>
+    <div class="benhchinh">
+        <div class="header">
+            <div class="header_top">
+                <div class="back">
+                    <a href="hiendien.html"><i class="fa fa-angle-left" aria-hidden="true"></i> Back</a>
+                </div>
+                <div class="menu">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="header_main">
+                <div class="name">
+                    <h1 class="tenbn">Ngô Thị Lý</h1>
+                    <p class="mabn">Mã bn: 02990</p>
+                    <p class="mabhyt">Mã bhyt: </p>
+                </div>
+                <div class="img">
+                    <img src="images/bn_img.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="benhchinh_main">
+            <div class="tab_menu">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Bệnh Chính</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu1">Bệnh Kèm Theo</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div id="home" class="tab-pane active">
+                    <div class="thongtin_nhapkhoa">
+                        <div class="detail">
+                            <div class="list_info">
+                                <p>Chẩn đoán lúc vào khoa</p>
+                                <p id="cdlvk"></p>
+                            </div>
+                            <div class="list_info">
+                                <p>Ngày vào khoa</p>
+                                <p id="ngayvaokhoa"></p>
+                            </div>
+                            <div class="list_info">
+                                <p>Giường hiện tại:</p>
+                                <p id="giuong">1</p>
+                            </div>
+                            <div class="list_info">
+                                <p>Lần:</p>
+                                <p id="lan">1</p>
+                            </div>
+                            <div class="list_info">
+                                <p>Bác sĩ:</p>
+                                <p id="bs_vaokhoa"></p>
+                            </div>
+                            <div class="list_info">
+                                <p>Khoa phòng:</p>
+                                <p id="khoa_nhapkhoa">Khoa phẫu thuật-Gmhs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input_edit">
+                        <p><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Sửa</p>
+                    </div>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <div class="thongtin_benhkem" id="ds-ten-benh">
+                        <table style="padding:0 15px"></table>
+                    </div>
+                    <button class="input_edit" data-toggle="modal" data-target="#exampleModal">
+                        <p><i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm bệnh kèm</p>
+                    </button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Thêm bệnh kèm</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="thong-tin-benhkem">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp Ngày</span>
+                                            </div>
+                                            <input type="text" name="fngay" class="form-control" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-medkit" aria-hidden="true"></i>&nbsp Mã ICD</span>
+                                            </div>
+                                            <input type="text" name="fmaicd" class="form-control" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp Tên Bệnh</span>
+                                            </div>
+                                            <input type="text" name="ftenbenh" class="form-control" aria-describedby="basic-addon1">
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> Thoát</button>
+                                    <button type="button" class="btn btn-primary add"><i class="fa fa-floppy-o" aria-hidden="true"></i> Lưu </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="lop_phu">
+
+        </div>
+        <!-- popup xóa -->
+        <div class="modal fade" id="xoaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="fa fa-exclamation-triangle fa-2x text-warning" aria-hidden="true"></i> Cảnh báo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Bạn có chắc muốn xóa???
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i> Thoát</button>
+                        <button class="btn btn-primary delete2"><i class="fa fa-floppy-o" aria-hidden="true"></i> Đồng ý</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--hết popup xóa -->
+        <div class="nav_all">
+            <div class="info_user">
+                <p><i class="fa fa-user" aria-hidden="true"></i> User</p>
+            </div>
+            <ul class="ul_menu">
+                <li><a href="">Bệnh chính-bệnh kèm</a></li>
+                <li><a href="p-ylenh-thuoc.html">Chỉ định thuốc</a></li>
+                <li><a href="p-ylenh-dichvu.html">Chỉ định dịch vụ</a></li>
+                <li><a href="">Dấu sinh tồn</a></li>
+                <li><a href="">Xuất khoa</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="jquery/jquery.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/thongtinbenhnhan.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/benhchinh.js"></script>
+</body>
+</html>

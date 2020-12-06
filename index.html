@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>newApp</title>
+</head>
+<body>
+    <div id="login">
+        <div class="dangnhap">
+            <div class="container">
+                <div class="logo"><img src="images/logo2.png" /></div>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Tên đăng nhập abcd</label>
+                        <input type="text" name="ften" class="form-control" placeholder="Tên đăng nhập">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Mật khẩu</label>
+                        <input type="password" name="fmatkhau" class="form-control" placeholder="Mật khẩu">
+                    </div>
+
+                    <!--<button class="btn btn-primary" id="btnlogin"><i class="fa fa-sign-in" aria-hidden="true"></i> Đăng Nhập</button>-->
+
+                </form>
+                <div class="btn-group" style="text-align:center;margin-top: 2px;">
+                    <button class="btn btn-primary" id="btnlogin">Đăng nhập</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="jquery/jquery.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/login.js"></script>
+</body>
+</html>

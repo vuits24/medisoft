@@ -1,0 +1,465 @@
+﻿
+
+@font-face {
+    font-family: 'Myriad Pro Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Condensed'), url('../font/MYRIADPRO-COND.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Myriad Pro Condensed';
+}
+
+#viewlist {
+    position: absolute;
+    z-index: 10000;
+    overflow-y: scroll;
+    left: 50%;
+    /*bottom: 14px;*/
+    transform: translate(-50%);
+    max-height: 50vh;
+    width: 85%;
+    top:48%;
+}
+/*login form*/
+#login {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+.dangnhap {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+    .dangnhap .logo {
+        width: 310px;
+        height: 135px;
+        margin: auto;
+    }
+
+    .dangnhap form label {
+        font-weight: bold;
+    }
+
+    .dangnhap form button {
+    }
+
+/*login form*/
+
+
+/*hi?n di?n/**/
+
+.hiendien {
+    background-color: #c3c1c129;
+    position: relative;
+    width: 100vw;
+}
+
+.header_hiendien {
+    width: 100vw;
+    height: 100px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 79%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0px 15px 0 15px;
+    color: #ffffffc7;
+    z-index: 1000;
+}
+
+.filter_hiendien {
+    transition: 0.4s;
+    width: 100vw;
+    padding: 0 15px;
+    margin-top: 80px;
+    background-color: #080c1080;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    height: 20px;
+    opacity: 0;
+}
+
+.filter_active {
+    width: 100vw;
+    padding: 0 15px;
+    margin-top: 80px;
+    background-color: #6c757d;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    opacity: 1;
+    height: 180px;
+    position: fixed;
+    z-index: 100;
+}
+
+
+.find_hiendien {
+    transition: .4s;
+}
+
+.hiendien_title h1 {
+    height: 100%;
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.find_input {
+    padding: 0 15px;
+    position: relative;
+    z-index: 100;
+}
+
+    .find_input > .has-search > .form-control {
+        padding-left: 2.375rem;
+    }
+
+    .find_input > .has-search > .form-control-feedback {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: 2.375rem;
+        height: 2.375rem;
+        line-height: 2.375rem;
+        text-align: center;
+        pointer-events: none;
+        color: #aaa;
+    }
+
+
+.list_bn {
+    position: relative;
+    z-index: 5;
+}
+
+.bn {
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    -moz-box-shadow: 3px 3px #666;
+    -webkit-box-shadow: 3px 3px #666;
+    box-shadow: 1px 1px #66666630;
+}
+
+    .bn > div {
+        padding-top: 10px;
+    }
+
+.img_bn {
+    max-height: 50px;
+    margin-right: 15px;
+    padding-top: 5px;
+}
+
+    .img_bn img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+.bn_info {
+    flex-grow: 2;
+}
+
+    .bn_info h4 {
+        font-size: 19px;
+        font-weight: bold;
+        color: #343a40;
+        letter-spacing: 1.5px;
+        margin-bottom: 1.5px;
+    }
+
+.arrow {
+    line-height: 60px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    z-index: 999;
+}
+
+    .back-to-top i {
+        color: #e2e6ea;
+    }
+
+.bn:hover {
+    background: #ced4da;
+}
+
+/*hi?n di?n/**/
+
+
+
+/* benh chinh */
+.benhchinh {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100vw;
+    height: 30vh;
+    background: #57B0D3;
+    background: -webkit-linear-gradient(bottom, #56E7A6, #57B0D3);
+    background: -moz-linear-gradient(bottom, #56E7A6, #57B0D3);
+    background: linear-gradient(to top, #56E7A6, #57B0D3);
+    position: relative;
+    border-radius: 0 0 20px 20px;
+}
+
+.header_top {
+    width: 100vw;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    color: #fff;
+    padding: 0 15px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #8080801f;
+}
+    .header_top a{
+        color:#ffffff;
+    }
+    .back {
+        width: 50px;
+        height: 100%;
+    }
+
+.menu {
+    width: 50px;
+    height: 100%;
+    text-align: center;
+}
+
+.header_main {
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+    color: #fff;
+}
+
+    .header_main > .img > img {
+        max-width: 80px;
+        max-height: 80px;
+        border: 1px solid #999999;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+
+    .header_main .name > h1 {
+        font-weight: bold;
+        margin-bottom: 1px;
+        font-size: 25px;
+        color: red;
+    }
+
+    .header_main .name > p {
+        margin-bottom: 1px;
+        color: gray;
+    }
+
+.benhchinh_main {
+    margin-top: 20px;
+}
+
+    .benhchinh_main .tab_menu > ul {
+        height: 50px;
+        justify-content: space-evenly;
+        border-bottom: none;
+        font-size: 20px;
+    }
+
+        .benhchinh_main .tab_menu > ul li {
+            border: 1px solid #cea322;
+            border-radius: 5px;
+            width: 113px;
+            font-size: 16px;
+            text-align: center
+        }
+
+            .benhchinh_main .tab_menu > ul li a {
+                height: 50px;
+            }
+
+            .benhchinh_main .tab_menu > ul li .active {
+                background: linear-gradient(to top, #56E7A6, #57B0D3);
+                color: #fff;
+            }
+
+
+.nav_all {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 80vw;
+    height: 100%;
+    background: #27313d;
+    z-index: 10;
+    opacity: 0;
+    transform: translateX(1500px);
+    transition: 0.5s;
+}
+
+.info_user {
+    display: flex;
+    color: #e8eaed;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 25px;
+    justify-content: center;
+    border-bottom: 2px solid #6c757d;
+}
+
+.ul_menu {
+    padding: 0 15px;
+}
+
+    .ul_menu li {
+        width: 100%;
+        height: 85px;
+        list-style: none;
+        text-align: center;
+        line-height: 85px;
+        border-top: 2px solid #20272f;
+        border-bottom: 2px solid #20272f;
+    }
+
+        .ul_menu li a {
+            width: 100%;
+            height: 100%;
+            color: #e8eaed;
+            font-size: 20px;
+        }
+
+.lop_phu {
+    width: 100vw;
+    height: 100vh;
+    background: #212529a8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: none;
+}
+
+div.menu:hover .lop_phu {
+    display: block;
+}
+
+.thongtin_nhapkhoa {
+    margin-bottom: 80px;
+    width: 100vw;
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+.list_info {
+    display: flex;
+    justify-content: space-between;
+    background: red;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to left, #d3c9cf, #d8d3db, #dddee4, #e5e8ec, #eef2f4, #eef2f3, #eff1f2, #f0f1f1, #e6e7e7, #dcdddd, #d2d3d3, #c8c9c9);
+    border-radius: 10px;
+}
+.list_info p{
+    padding:5px 5px 5px 5px;
+    margin-bottom:0;
+}
+
+.input_edit {
+    width: 100vw;
+    background: white;
+    border: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+    .input_edit p {
+        width: 60%;
+        color: dodgerblue;
+        padding: 10px 30px;
+        font-weight: bold;
+        border: 2px solid yellow;
+        border-radius: 15px;
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
+    }
+button.input_edit:focus{
+    outline:none;
+}
+
+.thongtin_benhkem {
+    background-color: #e9ecef;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+.thongtin_benhkem table {
+    width: 100%;
+}
+    .thongtin_benhkem table tr td {
+        padding: 15px 10px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #80808094;
+    }
+
+.group-btn i{
+    color: red;
+}
+/* bệnh chính */
+
+
+/*thuốc*/
+.btn-thuoc {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+}
+    .btn-thuoc a {
+        color: dodgerblue;
+        padding: 10px 30px;
+        font-weight: bold;
+        border: 2px solid yellow;
+        border-radius: 15px;
+    }
+
+
+/*thuốc*/
+.list_toathuoc {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}

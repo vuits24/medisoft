@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: * 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'  data: gap: https://ssl.gstatic.com 'unsafe-eval';object-src 'self' ;  style-src 'self' 'unsafe-inline'; media-src *">-->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Hiendien</title>
+</head>
+<body>
+
+    <div class="hiendien">
+        <div class="filter_hiendien">
+            <div class="chonngay">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp Chọn ngày</span>
+                    </div>
+                    <input type="date" id="txtDate" class="form-control" placeholder="Chọn ngày" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp Khoa phòng</span>
+                    </div>
+                    <input type="text" name="dskp" id="dskp" class="form-control" placeholder="Khoa phòng" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3" id="tr_tinhtrang">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Tình trạng</span>
+                    </div>
+                    <select class="form-control" id="dstinhtrang">
+                        <option value="0">Chưa khám</option>
+                        <option value="1">Đã khám</option>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="header_hiendien">
+            <div class="hiendien_back">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </div>
+            <div class="hiendien_title">
+                <h1>HIỆN DIỆN</h1>
+            </div>
+            <div class="find_hiendien">
+                <!--<i class="fa fa-filter" aria-hidden="true"></i>-->
+                <i class="fa fa-filter" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="find_input">
+            <div class="form-group has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+        </div>
+
+        <div class="list_bn">
+            <div class="bn">
+                <div class="img_bn">
+                    <img src="images/bn_img.png" alt="Alternate Text" />
+                </div>
+                <div class="bn_info">
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <div class="arrow">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="bn">
+                <div class="img_bn">
+                    <img src="images/bn_img.png" alt="Alternate Text" />
+                </div>
+                <div class="bn_info">
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <div class="arrow">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="bn">
+                <div class="img_bn">
+                    <img src="images/bn_img.png" alt="Alternate Text" />
+                </div>
+                <div class="bn_info">
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <div class="arrow">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="bn">
+                <div class="img_bn">
+                    <img src="images/bn_img.png" alt="Alternate Text" />
+                </div>
+                <div class="bn_info">
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <div class="arrow">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="bn">
+                <div class="img_bn">
+                    <img src="images/bn_img.png" alt="Alternate Text" />
+                </div>
+                <div class="bn_info">
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <div class="arrow">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="bn">
+                <div class="img_bn">
+                    <img src="images/bn_img.png" alt="Alternate Text" />
+                </div>
+                <div class="bn_info">
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <div class="arrow">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+
+        <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fa fa-arrow-up" aria-hidden="true"></i></i></a>
+    </div>
+
+    <!--script-->
+    <script src="jquery/jquery.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/hiendien.js"></script>
+</body>
+</html>
